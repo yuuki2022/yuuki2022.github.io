@@ -17,7 +17,7 @@ canvas{
 <body>
     
     <div>
-	<canvas id="canvas"></canvas>
+    <canvas id="canvas"></canvas>
    </div>
 
     <script>
@@ -133,3 +133,4 @@ function (callback) {
     </script>
 </body>
 </html>
+
