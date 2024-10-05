@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "Blog.md",
                 "mode": "source",
                 "source": false
               }
@@ -78,7 +78,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -168,12 +169,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "bcfdad983a7b5d5b",
+  "active": "613485b58507f066",
   "lastOpenFiles": [
+    "Blog.md",
+    "Blog.md",
+    "README.md",
     "ignore.md",
     "新建 Text Document.txt",
-    "Blog.md",
-    "index.md",
     "Reinforcement Learning",
     "Quantum Information",
     "Quantum Information/quantum.md"
