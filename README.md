@@ -1,4 +1,4 @@
-# Keep Young and Keep Curious:star2:
+# Keep Young and Keep Curious 🌟
 
 
 
