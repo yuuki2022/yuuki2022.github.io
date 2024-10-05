@@ -1,3 +1,4 @@
 ## Person
-name: Tianyu
+name: Tianyu 
+
 major: computer science(quantum information)
