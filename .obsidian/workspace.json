@@ -168,10 +168,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "4a2c8aceaf736d3e",
+  "active": "bcfdad983a7b5d5b",
   "lastOpenFiles": [
-    "index.md",
+    "ignore.md",
+    "新建 Text Document.txt",
     "Blog.md",
+    "index.md",
     "Reinforcement Learning",
     "Quantum Information",
     "Quantum Information/quantum.md"
