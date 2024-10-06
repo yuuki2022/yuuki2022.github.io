@@ -1,3 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://yuuki2022.github.io/%E4%B8%AD%E6%96%87/en/</loc>
+         <lastmod>2024-10-06</lastmod>
+    </url>
+    <url>
+         <loc>https://yuuki2022.github.io/%E4%B8%AD%E6%96%87/en/Quantum%20Computing/Hamiltonian/</loc>
+         <lastmod>2024-10-06</lastmod>
+    </url>
+    <url>
+         <loc>https://yuuki2022.github.io/%E4%B8%AD%E6%96%87/en/Quantum%20Computing/QAOA/</loc>
+         <lastmod>2024-10-06</lastmod>
+    </url>
+    <url>
+         <loc>https://yuuki2022.github.io/%E4%B8%AD%E6%96%87/%E4%B8%AD%E6%96%87/</loc>
+         <lastmod>2024-10-06</lastmod>
+    </url>
+    <url>
+         <loc>https://yuuki2022.github.io/%E4%B8%AD%E6%96%87/%E4%B8%AD%E6%96%87/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/QAOA/</loc>
+         <lastmod>2024-10-06</lastmod>
+    </url>
+    <url>
+         <loc>https://yuuki2022.github.io/%E4%B8%AD%E6%96%87/%E4%B8%AD%E6%96%87/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/%E5%93%88%E5%AF%86%E9%A1%BF%E9%87%8F%E6%A8%A1%E6%8B%9F/</loc>
+         <lastmod>2024-10-06</lastmod>
+    </url>
 </urlset>
