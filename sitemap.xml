@@ -8,18 +8,18 @@
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
     </url>
     <url>
-        <loc>None%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/QAOA/</loc>
+        <loc>NoneQuantum%20Computing/QAOA/</loc>
         <lastmod>2024-10-07</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="None%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/QAOA/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/QAOA/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="NoneQuantum%20Computing/QAOA/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Quantum%20Computing/QAOA/"/>
     </url>
     <url>
-        <loc>None%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/%E5%93%88%E5%AF%86%E9%A1%BF%E9%87%8F%E6%A8%A1%E6%8B%9F/</loc>
+        <loc>NoneQuantum%20Computing/%E5%93%88%E5%AF%86%E9%A1%BF%E9%87%8F%E6%A8%A1%E6%8B%9F/</loc>
         <lastmod>2024-10-07</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="None%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/%E5%93%88%E5%AF%86%E9%A1%BF%E9%87%8F%E6%A8%A1%E6%8B%9F/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/%E5%93%88%E5%AF%86%E9%A1%BF%E9%87%8F%E6%A8%A1%E6%8B%9F/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="NoneQuantum%20Computing/%E5%93%88%E5%AF%86%E9%A1%BF%E9%87%8F%E6%A8%A1%E6%8B%9F/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Quantum%20Computing/%E5%93%88%E5%AF%86%E9%A1%BF%E9%87%8F%E6%A8%A1%E6%8B%9F/"/>
     </url>
     <url>
         <loc>Noneen/</loc>
@@ -39,19 +39,13 @@
         <lastmod>2024-10-07</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/Quantum%20Computing/QAOA/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="NoneQuantum%20Computing/QAOA/"/>
     </url>
     <url>
-        <loc>Noneen/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/QAOA/</loc>
+        <loc>Noneen/Quantum%20Computing/%E5%93%88%E5%AF%86%E9%A1%BF%E9%87%8F%E6%A8%A1%E6%8B%9F/</loc>
         <lastmod>2024-10-07</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/QAOA/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="None%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/QAOA/"/>
-    </url>
-    <url>
-        <loc>Noneen/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/%E5%93%88%E5%AF%86%E9%A1%BF%E9%87%8F%E6%A8%A1%E6%8B%9F/</loc>
-        <lastmod>2024-10-07</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/%E5%93%88%E5%AF%86%E9%A1%BF%E9%87%8F%E6%A8%A1%E6%8B%9F/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="None%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/%E5%93%88%E5%AF%86%E9%A1%BF%E9%87%8F%E6%A8%A1%E6%8B%9F/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Quantum%20Computing/%E5%93%88%E5%AF%86%E9%A1%BF%E9%87%8F%E6%A8%A1%E6%8B%9F/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="NoneQuantum%20Computing/%E5%93%88%E5%AF%86%E9%A1%BF%E9%87%8F%E6%A8%A1%E6%8B%9F/"/>
     </url>
 </urlset>
