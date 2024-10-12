@@ -586,7 +586,7 @@ $$
 <center>图1. 哈密顿量的数学热力图</center></p>
 <p>哈密顿量的意义：</p>
 <ul>
-<li>在量子力学的框架下，哈密顿量的本征值对应于系统可能的能量水平，而本征态则是这些能量水平的量子态</li>
+<li>本征态/本征值的意义：在量子力学的框架下，哈密顿量的本征值对应于系统可能的能量水平，而本征态则是这些能量水平的量子态</li>
 <li>时间演化：根据薛定谔方程，量子系统的波函数随时间的演化与哈密顿量紧密相关。这意味着，知道了一个系统的哈密顿量，就可以预测其在任意时刻的状态</li>
 </ul>
 <p>在量子编程中的使用：</p>
@@ -598,13 +598,12 @@ $$
 <p>时间相关的薛定谔方程适用于系统的波函数随时间变换的情况，其数学表达式为
 $$
 i\hbar\frac\partial{\partial t}\varphi(r,t)=\hat{H}\varphi(r,t)
-$$</p>
-<ul>
-<li>i是虚数单位</li>
-<li>ℏ是约化普朗克常数（即普朗克常数<span class="arithmatex">\(6.62607015×10^{−34}\)</span>除以<span class="arithmatex">\(2\pi\)</span>)</li>
-<li><span class="arithmatex">\(\varphi(r,t)\)</span>是系统的波函数，描述了系统在位置r和时间t的状态</li>
-<li><span class="arithmatex">\(\hat{H}\)</span>是哈密顿算符，代表系统的总能量，包括动能和势能</li>
-</ul>
+$$
+其中：
+-  i是虚数单位
+- ℏ是约化普朗克常数（即普朗克常数<span class="arithmatex">\(6.62607015×10^{−34}\)</span>除以<span class="arithmatex">\(2\pi\)</span>)
+- <span class="arithmatex">\(\varphi(r,t)\)</span>是系统的波函数，描述了系统在位置r和时间t的状态
+- <span class="arithmatex">\(\hat{H}\)</span>是哈密顿算符，代表系统的总能量，包括动能和势能</p>
 <p>可以得到初态到末态的演化，哈密顿量要放在指数上
 $$
 |\varphi(t)&gt;=e^{-iHt}|\varphi(0)&gt;
