@@ -419,6 +419,39 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="哈密顿量（哈密顿算符）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      时间相关的薛定谔方程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      哈密顿量模拟的复杂性
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      一些基本门在哈密顿模拟中的量子电路
+    </span>
+  </a>
+  
 </li>
       
     </ul>
@@ -489,6 +522,39 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="哈密顿量（哈密顿算符）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      时间相关的薛定谔方程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      哈密顿量模拟的复杂性
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      一些基本门在哈密顿模拟中的量子电路
+    </span>
+  </a>
+  
 </li>
       
     </ul>
@@ -528,7 +594,24 @@ $$
 <li>量子算法的设计：专门用来求目标函数的最小值，目标函数可以作为哈密顿量</li>
 </ul>
 <h2 id="_1"><strong>哈密顿量（哈密顿算符）</strong><a class="headerlink" href="#_1" title="Permanent link">#</a></h2>
-<p>哈密顿量（哈密顿量）</p>
+<h3 id="_2">时间相关的薛定谔方程<a class="headerlink" href="#_2" title="Permanent link">#</a></h3>
+<p>时间相关的薛定谔方程适用于系统的波函数随时间变换的情况，其数学表达式为
+$$
+i\hbar\frac\partial{\partial t}\varphi(r,t)=\hat{H}\varphi(r,t)
+$$
+- i是虚数单位
+- ℏ是约化普朗克常数（即普朗克常数<span class="arithmatex">\(6.62607015×10^{−34}\)</span>除以<span class="arithmatex">\(2\pi\)</span>)
+- <span class="arithmatex">\(\varphi(r,t)\)</span>是系统的波函数，描述了系统在位置r和时间t的状态
+- <span class="arithmatex">\(\hat{H}\)</span>是哈密顿算符，代表系统的总能量，包括动能和势能</p>
+<p>可以得到初态到末态的演化，哈密顿量要放在指数上
+$$
+|\varphi(t)&gt;=e^{-iHt}|\varphi(0)&gt;
+$$</p>
+<h3 id="_3">哈密顿量模拟的复杂性<a class="headerlink" href="#_3" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[
+e^{-iht}=U^{\top}e^{}
+\]</div>
+<h2 id="_4">一些基本门在哈密顿模拟中的量子电路<a class="headerlink" href="#_4" title="Permanent link">#</a></h2>
 
 
 
