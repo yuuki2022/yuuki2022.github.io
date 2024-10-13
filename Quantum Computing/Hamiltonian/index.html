@@ -12,7 +12,7 @@
         <link rel="prev" href="../..">
       
       
-        <link rel="next" href="../QAOA/">
+        <link rel="next" href="../QUBO/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -434,7 +434,7 @@
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      哈密顿量模拟的复杂性
+      进一步推算
     </span>
   </a>
   
@@ -451,6 +451,30 @@
       哈密顿量在量子电路门中的表示
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="哈密顿量在量子电路门中的表示">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      需要用到的量子逻辑门
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      哈密顿量的可加性
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -470,11 +494,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../QAOA/" class="md-nav__link">
+      <a href="../QUBO/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    QAOA
+    QUBO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Grover/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grover算法
   </span>
   
 
@@ -537,7 +582,7 @@
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      哈密顿量模拟的复杂性
+      进一步推算
     </span>
   </a>
   
@@ -554,6 +599,30 @@
       哈密顿量在量子电路门中的表示
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="哈密顿量在量子电路门中的表示">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      需要用到的量子逻辑门
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      哈密顿量的可加性
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -592,6 +661,8 @@ $$
 <p>在量子编程中的使用：</p>
 <ul>
 <li>量子算法的设计：专门用来求目标函数的最小值，目标函数可以作为哈密顿量</li>
+<li>量子模拟：量子模拟是利用量子计算机来模拟复杂量子系统的演化。哈密顿量是量子模拟的核心，因为它是描述系统演化的关键。通过精确地构造和演化哈密顿量，可以模拟分子结构、材料性质和量子场论等问题。</li>
+<li>量子优化：哈密顿量通常用于编码问题的代价函数。例如，在量子近似优化算法（QAOA）中，目标哈密顿量 HPHP​ 编码了问题的优化目标，而驱动哈密顿量 HDHD​ 用于生成初始态。通过交替应用这两个哈密顿量，可以找到问题的最优解。</li>
 </ul>
 <h2 id="_1"><strong>哈密顿量（哈密顿算符）</strong><a class="headerlink" href="#_1" title="Permanent link">#</a></h2>
 <h3 id="_2">时间相关的薛定谔方程<a class="headerlink" href="#_2" title="Permanent link">#</a></h3>
@@ -605,15 +676,35 @@ $$</p>
 <li><span class="arithmatex">\(\varphi(r,t)\)</span>是系统的波函数，描述了系统在位置r和时间t的状态</li>
 <li><span class="arithmatex">\(\hat{H}\)</span>是哈密顿算符，代表系统的总能量，包括动能和势能</li>
 </ul>
-<p>可以得到初态到末态的演化，哈密顿量要放在指数上
+<p>可以得到初态到末态的演化：
 $$
 |\varphi(t)&gt;=e^{-iHt}|\varphi(0)&gt;
 $$</p>
-<h3 id="_3">哈密顿量模拟的复杂性<a class="headerlink" href="#_3" title="Permanent link">#</a></h3>
-<div class="arithmatex">\[
-e^{-iht}=U^{\top}e^{}
-\]</div>
+<h3 id="_3">进一步推算<a class="headerlink" href="#_3" title="Permanent link">#</a></h3>
+<p>我们对矩阵做特征分解：
+<span class="arithmatex">\(<span class="arithmatex">\(e^{-iHt}=U^{\top}e^{-i\bigwedge t}U\)</span>\)</span></p>
+<ul>
+<li>U为H的特征向量组成的矩阵</li>
+<li><span class="arithmatex">\(\bigwedge\)</span>为特征值在对角线排列组成的对角阵</li>
+</ul>
 <h2 id="_4">哈密顿量在量子电路门中的表示<a class="headerlink" href="#_4" title="Permanent link">#</a></h2>
+<h3 id="_5">需要用到的量子逻辑门<a class="headerlink" href="#_5" title="Permanent link">#</a></h3>
+<div class="arithmatex">\[I=\begin{bmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{bmatrix}\quad X=\begin{bmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{bmatrix}\quad 
+R_z(\theta)=\begin{bmatrix} 1 &amp;  \\  &amp; e^{i\theta} \end{bmatrix}\quad
+H=\frac{\sqrt{2}}{2}\begin{bmatrix}1&amp;1\\1&amp;-1\end{bmatrix}$$
+$$R_x(t)=\begin{bmatrix} cos(t) &amp; -isin(t) \\ -isin(t) &amp; cos(t) \end{bmatrix}$$
+### 示例
+#### 单位阵的表示
+$$e^{-iIt}=R_z(-t)XR_z(-t)X$$
+#### pauli-X 阵
+首先对$e^{-iHt}=U^{\top}e^{-i\bigwedge t}U$，对$X$进行正交分解，得到的特征向量组成的矩阵正好等于哈达玛门$H$
+$$e^{-iXt}=HXR_z (-t)XR_z(t)H\]</div>
+<h3 id="_6">哈密顿量的可加性<a class="headerlink" href="#_6" title="Permanent link">#</a></h3>
+<p>已知<span class="arithmatex">\(H=\begin{bmatrix} 0.5 &amp; 0.1667 \\ 0.1667 &amp; 0.5 \end{bmatrix}\)</span>
+容易得出<span class="arithmatex">\(H=0.5I+0.1667H\)</span>
+矩阵的指数函数有两种情况：
+1. 如果两个哈密顿量<span class="arithmatex">\(A,B\)</span>对易，那么<span class="arithmatex">\(AB=BA\)</span>有：<span class="arithmatex">\(<span class="arithmatex">\(e^{-i(A+B)t}=e^{-iAt}e^{-iBt}\)</span>\)</span>
+2. 若不对易<span class="arithmatex">\(<span class="arithmatex">\(e^{-i(A+B)t}=\lim_{m-&gt;\infty}(e^{-iAt/m}e^{-iBt/m})^m\)</span>\)</span></p>
 
 
 
@@ -666,13 +757,13 @@ e^{-iht}=U^{\top}e^{}
         
         
           
-          <a href="../QAOA/" class="md-footer__link md-footer__link--next" aria-label="下一页: QAOA">
+          <a href="../QUBO/" class="md-footer__link md-footer__link--next" aria-label="下一页: QUBO">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                QAOA
+                QUBO
               </div>
             </div>
             <div class="md-footer__button md-icon">
