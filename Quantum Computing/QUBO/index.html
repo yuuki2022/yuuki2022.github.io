@@ -513,6 +513,43 @@ $$
    Minimize\quad y=(x_1,x_2,x_3,x_4) \begin{bmatrix}-5&amp;2&amp;4&amp;0\ 2&amp;-3&amp;1&amp;0\ 4&amp;1&amp;-8&amp;5\ 0&amp;0&amp;5&amp;6\end{bmatrix} \begin{bmatrix}x_1 \ x_2 \ x_3\ x_4 \end{bmatrix}
    $$
    4. 这样可以得到一个矩阵<span class="arithmatex">\(Q\)</span>，以前的线性项在主对称轴上</p>
+<h2 id="_3">加入惩罚项<a class="headerlink" href="#_3" title="Permanent link">#</a></h2>
+<p>在实际情况中，其实很多问题是带有约束条件的。许多这些约束模型可以有效地重新表述为 QUBO 模型。选择引入的惩罚，以便在优化器寻找避免产生惩罚的解决方案时，可以通过优化器的自然功能来替代原始约束对解决方案过程的影响。也就是说，惩罚被制定为使得对于可行的解决方案它们等于零并且对于不可行的解决方案等于一些正的惩罚金额。对于最小化问题，添加这些惩罚以创建要最小化的增强目标函数。如果可以将惩罚项驱至零，则增强目标函数将成为要最小化的原始函数。</p>
+<p>常见的一些惩罚项如下：</p>
+<table>
+<thead>
+<tr>
+<th>经典约束</th>
+<th>等价惩罚</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(x+y&lt;=1\)</span></td>
+<td><span class="arithmatex">\(P(xy)\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x+y&gt;=1\)</span></td>
+<td><span class="arithmatex">\(P(1-x-y+xy)\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x+y=1\)</span></td>
+<td><span class="arithmatex">\(P(1-x-y+2xy)\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x&lt;=y\)</span></td>
+<td><span class="arithmatex">\(P(x-xy)\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x_1+x_2+x_3&lt;=1\)</span></td>
+<td><span class="arithmatex">\(P(x_1x_2+x_1+x_3+x_2+x_3)\)</span></td>
+</tr>
+<tr>
+<td>x=y</td>
+<td><span class="arithmatex">\(P(x+y-2xy)\)</span></td>
+</tr>
+</tbody>
+</table>
 
 
 
