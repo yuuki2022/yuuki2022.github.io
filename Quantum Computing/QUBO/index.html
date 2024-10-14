@@ -494,7 +494,7 @@
 <h1 id="qubo">基本的QUBO公式<a class="headerlink" href="#qubo" title="Permanent link">#</a></h1>
 <p>QUBO公式：
 $$
-QUBO:minimize/maximize y=x^tQx
+QUBO:minimize/maximize\quad y=x^tQx
 $$</p>
 <ul>
 <li>x：二元决策变量的向量（一个元素只包含0和1的向量</li>
@@ -503,14 +503,14 @@ $$</p>
 <h2 id="_2">一个例子<a class="headerlink" href="#_2" title="Permanent link">#</a></h2>
 <p>对于一个优化问题：
 $$
-Minimize y=-5x_1 -3x_2-8x_3-6x_4+4x_1x_2+8x_1x_3+2x_2x_3+10x_3x_4
+Minimize\quad y=-5x_1 -3x_2-8x_3-6x_4+4x_1x_2+8x_1x_3+2x_2x_3+10x_3x_4
 $$
 变量<span class="arithmatex">\(x_j\)</span>是二进制的，我们可以看出：
 1. 要最小化的函数是二元变量的二次函数，线性部分是<span class="arithmatex">\(-5x_1 -3x_2-8x_3-6x_4\)</span>，和二次部分<span class="arithmatex">\(4x_1x_2+8x_1x_3+2x_2x_3+10x_3x_4\)</span>
 2. 由于二进制变量满足<span class="arithmatex">\(x_j=x_{j}^{2}\)</span>，线性部分可以写作：<span class="arithmatex">\(-5x_1^2 -3x_2^2-8x_3^2-6x_4^2\)</span>
 3. 我们可以将函数写成下面的矩阵形式：
    $$ 
-   Minimize y=(x_1,x_2,x_3,x_4) \begin{bmatrix}-5 &amp; 2 &amp; 4 &amp;0 \2 &amp; -3 &amp;1 &amp; 0 \4 &amp; 1 &amp; -8 &amp; 5\0 &amp; 0 &amp; 5 &amp; 6\end{bmatrix} \begin{bmatrix}x_1 \x_2 \x_3\x_4\end{bmatrix}
+   Minimize\quad y=(x_1,x_2,x_3,x_4) \begin{bmatrix}-5 &amp; 2 &amp; 4 &amp;0 \ 2 &amp; -3 &amp;1 &amp; 0 \ 4 &amp; 1 &amp; -8 &amp; 5 \ 0 &amp; 0 &amp; 5 &amp; 6\end{bmatrix} \begin{bmatrix}x_1 \ x_2 \x_3\x_4 \end{bmatrix}
    $$
    4. 这样可以得到一个矩阵<span class="arithmatex">\(Q\)</span>，以前的线性项在主对称轴上</p>
 
