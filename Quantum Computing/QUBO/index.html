@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -393,6 +398,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -454,6 +461,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -468,9 +477,29 @@
                   
 
 
-  <h1>QUBO</h1>
-
-
+<h1 id="_1">组合优化问题<a class="headerlink" href="#_1" title="Permanent link">#</a></h1>
+<p>组合优化（CO）领域是优化领域最重要的领域之一，在各个行业（包括私营和公共部门）都有实际应用。一般地，这些问题涉及在必须大量做出是/否决策并且每组决策产生相应的目标函数值（例如成本或者利润值）的环境中做出明智的选择。在这些环境中找到好的解决方案是极其困难的。<br></p>
+<p>QUBO（二次无约束二元优化问题的缩写）的数学公式可以涵盖工业、数学和政府中发现的各种组合优化问题。<br></p>
+<p>QUBO模型在组合优化中包含许多模型能力的重要性得到增强，因为QUBO模型可以被证明与物理学中发挥着重要作用的Ising模型等效，通过最先进的QUBO求解方法有效解决广泛优化问题与物理应用中出现的重要问题领域相结合<br>
+QUBO模型在以下重要的优化问题领域适用：
+- 二次分配问题
+- 资金预算问题
+- 多背包问题
+- 任务分配问题
+- 最大多样性问题
+- 不对称分配问题
+- 对称分配问题
+- 约束满足问题
+- ........</p>
+<h1 id="qubo">基本的QUBO公式<a class="headerlink" href="#qubo" title="Permanent link">#</a></h1>
+<p>QIUBO公式：
+$$
+QUBO:minimize/maximize y=x^tQx
+$$</p>
+<ul>
+<li>x：二元决策变量的向量（一个元素只包含0和1的向量</li>
+<li>Q：一个常数矩阵</li>
+</ul>
 
 
 
